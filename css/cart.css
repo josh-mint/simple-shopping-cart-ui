@@ -451,9 +451,18 @@ li .navbar-button:hover {
 }
 
 @media screen and (max-width: 991px) {
-  .main-cart-detail, .side-bar-cart-sticky {
+
+  .main-cart-detail,
+  .side-bar-cart-sticky {
     padding: 0;
     display: block;
     width: 100%;
   }
+}
+
+@media screen and (max-width: 649px) {
+  .main-cart-detail h1 {
+    font-size: 15px;
+  }
+
 }
