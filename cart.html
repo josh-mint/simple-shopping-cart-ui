@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giỏ hàng của bạn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a class="navbar-button" href="./trang_chu.html">Trang chủ</a>
+    </li>
+    <li>
+      <a class="navbar-button" href="#">Sản phẩm</a>
+    </li>
+  </ul>
+
+
+  <div class="container">
+    <div class="main-cart-detail">
+      <div class="heading-cart">
+        <h1>Giỏ hàng của bạn</h1>
+      </div>
+
+      <div class="list-form-cart">
+        <form id="cartform">
+          <div class="cart-row">
+            <p class="title-number-cart">Bạn đang có <strong>3 sản phẩm</strong> trong giỏ hàng</p>
+            <div class="table-cart">
+              <div class="card_item">
+                <div class="media-left">
+                  <div class="product_img">
+                    <img src="./img/ao_khoac_den_the_thao.jpg" alt="Áo khoác đen thể thao" />
+                  </div>
+
+                  <div class="product-remove">
+                    <img class="pqt-discard" src="./img/discard_cart_item_icon.svg" alt="Xóa sản phẩm"
+                      title="Xóa sản phẩm">
+                  </div>
+                </div>
+
+                <div class="media-right">
+                  <div class="product_info">
+                    <h1>Áo khoác đen thể thao</h1>
+                    <p><span>130,000</span>₫</p>
+                  </div>
+                </div>
+
+                <div class="media-total">
+                  <div>
+                    <span><span><b>260,000</b></span>₫</span>
+                  </div>
+
+                  <div class="product_rate_info">
+                    <button class="pqt-plus" title="Thêm 1 sản phẩm">+</button>
+                    <input type="text" value="2" class="pqt"></input>
+                    <button class="pqt-minus" title="Giảm 1 sản phẩm">-</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card_item">
+                <div class="media-left">
+                  <div class="product_img">
+                    <img src="./img/ao_so_mi_xanh_cong_so.jpg" alt="Áo sơ mi xanh công sở" />
+                  </div>
+
+                  <div class="product-remove">
+                    <img class="pqt-discard" src="./img/discard_cart_item_icon.svg" alt="Xóa sản phẩm"
+                      title="Xóa sản phẩm">
+                  </div>
+                </div>
+
+                <div class="media-right">
+                  <div class="product_info">
+                    <h1>Áo sơ mi xanh công sở</h1>
+                    <p><span>170,000</span>₫</p>
+                  </div>
+                </div>
+
+                <div class="media-total">
+                  <div>
+                    <span><span><b>510,000</b></span>₫</span>
+                  </div>
+
+                  <div class="product_rate_info">
+                    <button class="pqt-plus" title="Thêm 1 sản phẩm">+</button>
+                    <input type="text" value="3" class="pqt"></input>
+                    <button class="pqt-minus" title="Giảm 1 sản phẩm">-</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card_item">
+                <div class="media-left">
+                  <div class="product_img">
+                    <img src="./img/quan_thun_nam_mau_khoi.jpg" alt="Quần thun nam màu khói" />
+                  </div>
+
+                  <div class="product-remove">
+                    <img class="pqt-discard" src="./img/discard_cart_item_icon.svg" alt="Xóa sản phẩm"
+                      title="Xóa sản phẩm">
+                  </div>
+                </div>
+
+                <div class="media-right">
+                  <div class="product_info">
+                    <h1>Quần thun nam màu khói</h1>
+                    <p><span>150,000</span>₫</p>
+                  </div>
+                </div>
+
+                <div class="media-total">
+                  <div>
+                    <span><span><b>150,000</b></span>₫</span>
+                  </div>
+
+                  <div class="product_rate_info">
+                    <button class="pqt-plus" title="Thêm 1 sản phẩm">+</button>
+                    <input type="text" value="1" class="pqt"></input>
+                    <button class="pqt-minus" title="Giảm 1 sản phẩm">-</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cart-row">
+            <div class="order-noted-block">
+              <div class="container-pd15">
+                <div class="checkout-buttons clearfix">
+                  <label for="note" class="note-label">Ghi chú đơn hàng</label>
+                  <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-row">
+            <div class="order-invoice-block">
+              <div class="checkbox">
+                <input type="hidden" name="attributes[invoice]" id="re-checkbox-bill" value="no">
+                <input type="checkbox" id="checkbox-bill" value="yes" name="regular-checkbox" class="regular-checkbox"
+                  onclick="showBillForm()">
+                <label for="checkbox-bill" class="box"></label>
+                <label for="checkbox-bill" class="title">Xuất hoá đơn cho đơn hàng</label>
+              </div>
+
+              <div class="bill-field" id="bill-fill-form">
+                <div class="grid-container">
+                  <div class="form-group">
+                    <input type="text" class="form-control val-f check_change" name="attributes[bill_order_company]"
+                      value="" placeholder="Tên công ty...">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="number" pattern=".{10,}" onkeydown="return HRT.All.FilterInput(event)"
+                      onpaste="HRT.All.handlePaste(event)" class="form-control val-f val-n check_change"
+                      name="attributes[bill_order_tax_code]" value="" placeholder="Mã số thuế...">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" class="form-control val-f val-mail check_change" name="attributes[bill_email]"
+                      value="" placeholder="Email...">
+                  </div>
+
+                  <div class="form-group grid-full-width">
+                    <input type="text" class="form-control val-f check_change" name="attributes[bill_order_address]"
+                      value="" placeholder="Địa chỉ công ty...">
+                  </div>
+
+                </div>
+                <div class="form-btn">
+                  <a href="javascript:void();" class="button save-button">Lưu thông tin</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="side-bar-cart-sticky">
+      <div class="order-summary-block">
+        <h2 class="summary-title">Thông tin đơn hàng</h2>
+
+        <div class="summary-total">
+          <p>Tổng tiền <span>925,000₫</span></p>
+        </div>
+
+        <div class="summary-action">
+          <p>Phí vận chuyển sẽ được tính ở trang thanh toán</p>
+          <p>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán</p>
+        </div>
+
+        <div class="summary-button">
+          <a id="button-cart-check-out" class="button checkout-button" href="./thanh_toan.html">THANH TOÁN</a>
+        </div>
+      </div>
+
+      <div class="order-summary-block order-summary-notify ">
+        <div class="summary-warning alert-order">
+          <p class="textmr"><strong>Chính sách giao hàng</strong></p>
+          <p>Hiện chúng tôi chỉ áp dụng thanh toán với đơn hàng có giá trị tối thiểu <strong>150.000₫ </strong> trở lên.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/cart.js" async defer></script>
+</body>
+
+</html>

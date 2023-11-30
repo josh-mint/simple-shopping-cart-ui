@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>UI Dropdown cho giỏ hàng khi hover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#home">Trang chủ</a></li>
+    <li><a href="#news">Sản phẩm</a></li>
+    <li style="margin-left: 20%;" class="dropdown">
+      <a class="dropbtn">(Icon giỏ hàng)</a>
+      <div class="order_summary dropdown-content">
+        <div class="summary_card">
+          <h1>Giỏ hàng của bạn</h1>
+          <div class="card_item">
+            <div class="product_img">
+              <img src="https://i.ibb.co/5L36zcn/ao-khoac-den-the-thao.jpg" alt="" />
+            </div>
+            <div class="product_info">
+              <h1>Áo khoác đen thể thao</h1>
+              <p>Đơn giá: <span>130,000</span>₫</p>
+              <div class="close-btn">
+                <i class="fa fa-close"></i>
+              </div>
+              <div class="product_rate_info">
+                <span class="pqt-minus">-</span>
+                <span class="pqt">2</span>
+                <span class="pqt-plus">+</span>
+                <img class="pqt-discard" src="./Images/discard_cart_item_icon.svg" alt="">
+              </div>
+              <div>
+                <span>Tổng: <span><b>260,000</b></span>₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="product_img">
+              <img src="https://i.ibb.co/BgK2vPY/quan-thun-nam-mau-khoi.jpg" alt="" />
+            </div>
+            <div class="product_info">
+              <h1>Quần thun nam màu khói</h1>
+              <p>Đơn giá: <span>150,000</span>₫</p>
+              <div class="close-btn">
+                <i class="fa fa-close"></i>
+              </div>
+              <div class="product_rate_info">
+                <span class="pqt-minus">-</span>
+                <span class="pqt">1</span>
+                <span class="pqt-plus">+</span>
+                <img class="pqt-discard" src="./Images/discard_cart_item_icon.svg" alt="">
+              </div>
+              <div>
+                <span>Tổng: <span><b>150,000</b></span>₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="product_img">
+              <img src="https://i.ibb.co/ZzBvW1d/ao-so-mi-xanh-cong-so.jpg" alt="" />
+            </div>
+            <div class="product_info">
+              <h1>Áo sơ mi xanh công sở</h1>
+              <p>Đơn giá: <span>170,000</span>₫</p>
+              <div class="close-btn">
+                <i class="fa fa-close"></i>
+              </div>
+              <div class="product_rate_info">
+                <span class="pqt-minus">-</span>
+                <span class="pqt">3</span>
+                <span class="pqt-plus">+</span>
+                <img class="pqt-discard" src="./Images/discard_cart_item_icon.svg" alt="">
+              </div>
+              <div>
+                <span>Tổng: <span><b>510,000</b></span>₫</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="order_price">
+            <p>Tổng giá</p>
+            <h4>920,000<span>₫</span></h4>
+          </div>
+          <div class="order_service">
+            <p>Phí phụ thu</p>
+            <h4>5,000<span>₫</span></h4>
+          </div>
+          <div class="order_total">
+            <p>Thành tiền</p>
+            <h4>925,000<span>₫</span></h4>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</body>
+
+</html>

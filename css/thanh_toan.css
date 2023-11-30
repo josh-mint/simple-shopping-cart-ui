@@ -1,0 +1,42 @@
+@import url(./default.css);
+
+/* ========================================================== */
+
+/* nav bar mẫu */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li .navbar-button,
+.cart-icon {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li .navbar-button:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+/* ========================================================== */
+
+/* nội dung body */
+
+body h1 {
+  text-align: center;
+  margin-top: 100px;
+}
